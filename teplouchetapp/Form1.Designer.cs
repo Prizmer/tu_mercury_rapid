@@ -47,13 +47,13 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.cbWithData = new System.Windows.Forms.CheckBox();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.cbWithData = new System.Windows.Forms.CheckBox();
             this.rbT0 = new System.Windows.Forms.RadioButton();
             this.rbT123 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
@@ -261,10 +261,29 @@
             0,
             0});
             // 
+            // cbWithData
+            // 
+            this.cbWithData.AutoSize = true;
+            this.cbWithData.Checked = true;
+            this.cbWithData.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbWithData.Location = new System.Drawing.Point(914, 224);
+            this.cbWithData.Name = "cbWithData";
+            this.cbWithData.Size = new System.Drawing.Size(102, 21);
+            this.cbWithData.TabIndex = 57;
+            this.cbWithData.Text = "С данными";
+            this.toolTip1.SetToolTip(this.cbWithData, "Читать показания по тарифам вместе с серийным номером");
+            this.cbWithData.UseVisualStyleBackColor = true;
+            this.cbWithData.CheckedChanged += new System.EventHandler(this.cbWithData_CheckedChanged);
+            // 
             // numericUpDown2
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(945, 119);
             this.numericUpDown2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            250,
+            0,
+            0,
+            0});
             this.numericUpDown2.Minimum = new decimal(new int[] {
             1,
             0,
@@ -285,7 +304,7 @@
             this.numericUpDown3.Location = new System.Drawing.Point(945, 155);
             this.numericUpDown3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDown3.Maximum = new decimal(new int[] {
-            249,
+            250,
             0,
             0,
             0});
@@ -341,20 +360,6 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(161, 52);
             this.listBox1.TabIndex = 56;
-            // 
-            // cbWithData
-            // 
-            this.cbWithData.AutoSize = true;
-            this.cbWithData.Checked = true;
-            this.cbWithData.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbWithData.Location = new System.Drawing.Point(914, 224);
-            this.cbWithData.Name = "cbWithData";
-            this.cbWithData.Size = new System.Drawing.Size(102, 21);
-            this.cbWithData.TabIndex = 57;
-            this.cbWithData.Text = "С данными";
-            this.toolTip1.SetToolTip(this.cbWithData, "Читать показания по тарифам вместе с серийным номером");
-            this.cbWithData.UseVisualStyleBackColor = true;
-            this.cbWithData.CheckedChanged += new System.EventHandler(this.cbWithData_CheckedChanged);
             // 
             // rbT0
             // 
