@@ -331,26 +331,36 @@ namespace teplouchetapp
                             // перебираем тарифы
                             for (byte j = 0; j < 5; j++)
                             {
-                                // получим данные ток по T0
-                                if (Meter.ReadCurrentMeterageToTarif(j, ref mAnswBytes))
+
+                                try
                                 {
-                                    for (ushort k = 0; k < captions.Length; k++)
+                                    // получим данные ток по T0
+                                    if (Meter.ReadCurrentMeterageToTarif(j, ref mAnswBytes))
                                     {
-                                        float val = -1f;
-                                        Meter.GetValueFromMeterageToTarifAnswer(k, mAnswBytes, ref val);                                  
-                                        dt.Rows[i][colNames[k] + j] = val;
+                                        for (ushort k = 0; k < captions.Length; k++)
+                                        {
+                                            float val = -1f;
+                                            Meter.GetValueFromMeterageToTarifAnswer(k, mAnswBytes, ref val);
+                                            dt.Rows[i][colNames[k] + j] = val;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        dt.Rows[i][j * 4] = "Ошибка";
                                     }
                                 }
-                                else
+                                catch (Exception ex)
                                 {
-                                    dt.Rows[i][j * 4] = "Ошибка";
+                                    WriteToStatus(ex.ToString());
                                 }
 
-    
                                 if (j == 0 && rbT0.Checked) break;
                             }
 
                         }
+
+
+
                     }
                     else
                     {

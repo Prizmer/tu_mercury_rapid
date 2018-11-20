@@ -63,3 +63,4 @@ C:\_PI_Projects\testUtils\tu_mercury_rapid\teplouchetapp\obj\x86\Debug\teplouche
 C:\_PI_Projects\testUtils\tu_mercury_rapid\teplouchetapp\obj\x86\Debug\teplouchetapp.csproj.CoreCompileInputs.cache
 C:\_PI_Projects\testUtils\tu_mercury_rapid\teplouchetapp\obj\x86\Debug\teplouchetapp.exe
 C:\_PI_Projects\testUtils\tu_mercury_rapid\teplouchetapp\obj\x86\Debug\teplouchetapp.pdb
+C:\_PI_Projects\testUtils\tu_mercury_rapid\teplouchetapp\obj\x86\Debug\teplouchetapp.csprojResolveAssemblyReference.cache

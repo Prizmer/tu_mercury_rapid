@@ -132,7 +132,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 516);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 12, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1210, 25);
+            this.statusStrip1.Size = new System.Drawing.Size(1167, 25);
             this.statusStrip1.SizingGrip = false;
             this.statusStrip1.TabIndex = 43;
             this.statusStrip1.Text = "statusStrip1";
@@ -256,7 +256,7 @@
             this.numericUpDown4.TabIndex = 55;
             this.toolTip1.SetToolTip(this.numericUpDown4, "Время ожидания ответа одного счетчика");
             this.numericUpDown4.Value = new decimal(new int[] {
-            4001,
+            2002,
             0,
             0,
             0});
@@ -330,7 +330,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(146, 22);
             this.textBox1.TabIndex = 51;
-            this.textBox1.Text = "192.168.23.41";
+            this.textBox1.Text = "192.168.23.42";
             // 
             // label2
             // 
@@ -389,7 +389,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1210, 541);
+            this.ClientSize = new System.Drawing.Size(1167, 541);
             this.Controls.Add(this.rbT123);
             this.Controls.Add(this.rbT0);
             this.Controls.Add(this.cbWithData);
@@ -414,7 +414,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "МЕРКУРИЙ230 - программа опроса v.2";
+            this.Text = "МЕРКУРИЙ230 - программа опроса v.3";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();
