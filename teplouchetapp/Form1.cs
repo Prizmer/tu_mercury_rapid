@@ -86,7 +86,7 @@ namespace teplouchetapp
             ushort read_timeout = (ushort)numericUpDown1.Value;
             byte attempts = 1;
             uint mAddr = 0x01;
-            string mPass = "111111";
+            string mPass = this.tbPass.Text;
 
             if (!setTcp){
                 try
